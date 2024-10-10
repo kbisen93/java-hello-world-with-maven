@@ -8,14 +8,14 @@ pipeline {
             }
         }
         
-    /*    stage('List') {
+        stage('List') {
             steps {
-                bat '''cd C:\\Users\\Kshitij.Bisen\\Desktop\\New-Maven_Repo\\java-hello-world-with-maven\\target\\
+                bat '''cd C:\\JenkinsAgent\\workspace\\DeclarativePipelineDemo
                     dir'''
             }
         }
         
-        stage('Build') {
+    /*    stage('Build') {
             steps {
                 bat 'mvn -v'
             }
@@ -33,9 +33,9 @@ pipeline {
             }
         } */
         
-     /*   stage('Build Maven project') {
+    /*    stage('Build Maven project') {
             steps {
-                bat '''cd C:\\JenkinsAgent\\workspace\\MyFirstPipeline\\java-hello-world-with-maven
+                bat '''cd C:\\JenkinsAgent\\workspace\\DeclarativePipelineDemo
                         mvn package'''
             }
         } */
