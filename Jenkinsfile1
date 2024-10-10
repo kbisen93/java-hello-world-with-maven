@@ -1,0 +1,51 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Prep') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        
+    /*    stage('List') {
+            steps {
+                bat '''cd C:\\Users\\Kshitij.Bisen\\Desktop\\New-Maven_Repo\\java-hello-world-with-maven\\target\\
+                    dir'''
+            }
+        }
+        
+        stage('Build') {
+            steps {
+                bat 'mvn -v'
+            }
+        }  */
+        
+      /*  stage('Version Control') {
+            steps {
+                bat 'git clone https://kbisen93:Nayana0909@github.com/kbisen93/MyTestRepo.git'
+            }
+        } */
+        
+      /*  stage('Clone Maven project') {
+            steps {
+                bat 'git clone https://kbisen93:Nayana0909@github.com/jabedhasan21/java-hello-world-with-maven.git'
+            }
+        } */
+        
+     /*   stage('Build Maven project') {
+            steps {
+                bat '''cd C:\\JenkinsAgent\\workspace\\MyFirstPipeline\\java-hello-world-with-maven
+                        mvn package'''
+            }
+        } */
+        
+   /*     stage('Compile Java project') {
+            steps {
+                bat '''cd C:\\JenkinsAgent\\workspace\\MyFirstPipeline\\java-hello-world-with-maven\\target
+                    java -cp jb-hello-world-maven-0.2.0.jar hello.HelloWorld'''
+            }
+        } */
+    }
+    
+}
