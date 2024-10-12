@@ -15,11 +15,11 @@ pipeline {
             }
         }
         
-    /*    stage('Build') {
+        stage('Maven Version') {
             steps {
                 bat 'mvn -v'
             }
-        }  */
+        }
         
       /*  stage('Version Control') {
             steps {
@@ -33,19 +33,19 @@ pipeline {
             }
         } */
         
-        stage('Build Maven project') {
+    /*    stage('Build Maven project') {
             steps {
                 bat '''cd C:\\JenkinsAgent\\workspace\\DeclarativePipelineDemo
                         mvn package'''
             }
-        }
+        } */
         
-   /*     stage('Compile Java project') {
+        stage('Compile Java project') {
             steps {
-                bat '''cd C:\\JenkinsAgent\\workspace\\MyFirstPipeline\\java-hello-world-with-maven\\target
+                bat '''cd C:\\JenkinsAgent\\workspace\\DeclarativePipelineDemo\\target
                     java -cp jb-hello-world-maven-0.2.0.jar hello.HelloWorld'''
             }
-        } */
+        }
     }
     
 }
