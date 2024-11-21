@@ -21,17 +21,11 @@ pipeline {
             }
         }
         
-      /*  stage('Version Control') {
-            steps {
-                bat 'git clone https://kbisen93:Nayana0909@github.com/kbisen93/MyTestRepo.git'
-            }
-        } */
-        
-      /*  stage('Clone Maven project') {
+        stage('Clone Maven project') {
             steps {
                 bat 'git clone https://kbisen93:Nayana0909@github.com/jabedhasan21/java-hello-world-with-maven.git'
             }
-        } */
+        }
         
     /*    stage('Build Maven project') {
             steps {
@@ -40,12 +34,12 @@ pipeline {
             }
         } */
         
-        stage('Compile Java project') {
+   /*     stage('Compile Java project') {
             steps {
                 bat '''cd C:\\JenkinsAgent\\workspace\\DeclarativePipelineDemo\\target
                     java -cp jb-hello-world-maven-0.2.0.jar hello.HelloWorld'''
             }
-        }
+        } */
     }
     
 }
