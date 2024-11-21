@@ -34,12 +34,12 @@ pipeline {
             }
         }
         
-   /*     stage('Compile Java project') {
+        stage('Run Java project') {
             steps {
                 bat '''cd C:\\JenkinsAgent\\workspace\\DeclarativePipelineDemo\\target
                     java -cp jb-hello-world-maven-0.2.0.jar hello.HelloWorld'''
             }
-        } */
+        } 
     }
     
 }
